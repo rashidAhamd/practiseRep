@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<!-- <div class=" grid grid-cols-4  w-[800px] h-[500px] bg-[yellow] "> -->
+<div class="grid" style=" width:350px; height:800px;column-gap:5px;
+row-gap:5px; display:grid; grid-template-columns: 100px 100px 100px ; background-color: yellow; grid-template-rows: 100px 100px 100px;">
+<div class="item1  bg-[green]   " style="  grid-column-start: 1;
+  grid-column-end: 4;" > 1</div>
+<div class="item2 w-[100px] h-[100px]  bg-[red] "> 2</div>
+<div class="item3  bg-[blue]" style="grid-column-start:1; grid-column-end:4;
+grid-row-start:2; grid-row-end:5;">3</div>
+<div class="item4 w-[100px] h-[100px]  bg-[orange]">4</div>
+<div class="item5 w-[100px] h-[100px]  bg-[pink]">5</div>
+<div class="item6 w-[100px] h-[100px]  bg-[#693] ">6</div>
+<div class="item7 w-[100px] h-[100px]  bg-[black] ">7</div>
+<div class="item8 w-[100px] h-[100px]  bg-[indigo] ">8</div>
+
+
+
+</div>
+
+<div class="ar grid  bg-[pink] w-[700px] h-[600px] " style=" position:relative; top:200px">
+    <div class="ite1 bg-[silver]" style=" grid-area:2/2/span 1/span 1;"></div>
+    <div class="ite2 bg-[orange]"></div>
+    <div class="ite3 bg-[green]"></div>
+    <div class="ite4 bg-[red] col-span-2"></div>
+</div>
+<br>
+<!-- tailwind grid commands to create lay out -->
+<div class=" ras mt-[300px] w-[700px] h-[800px] bg-[grey]  grid grid-cols-4 gap-10">
+  <div class=" ras1  h-[300px] bg-[red]"></div>
+  <div class="ras2 h-[300px] bg-[green]"></div>
+  <div class="ras3 h-[300px] bg-[yellow]"></div>
+  <div class=" h-[300px]  bg-[orange]"></div>
+  <div class=" h-[300px] bg-[pink]"></div>
+  <div class=" h-[300px]  bg-[black]"></div>
+  
+</div>
+<!-- grid commant to change span  -->
+<div class=" mt-[300px] w-full h-[800px] bg-[grey]  grid grid-cols-4 gap-2">
+  <div class="  col-span-2 h-[100px] bg-[red]"></div>
+  <div class="h-[100px] bg-[green]"></div>
+  <div class=" h-[100px] bg-[yellow]"></div>
+  <div class=" h-[100px]  bg-[orange]"></div>
+  <div class=" h-[100px] bg-[pink]"></div>
+  <div class="  h-[100px]  bg-[black]"></div>
+  
+</div>
+
+    
+</body>
+</html>
